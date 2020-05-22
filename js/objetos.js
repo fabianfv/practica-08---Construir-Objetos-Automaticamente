@@ -26,3 +26,20 @@ function marca_aleatoria() {
   ]
   return marcas[num_aleatorio(0, marcas.length - 1)]
 }
+
+function modelo_aleatorio() {
+  const letras = [
+    "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
+    "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"
+  ]
+  let letra1 = letras[num_aleatorio(0, letras.length - 1)]
+  let num1 = num_aleatorio(48, 57)
+  let letra2 = letras[num_aleatorio(0, letras.length - 1)]
+  let num2 = num_aleatorio(48, 57)
+  return letra1 + num1 + letra2 + num2
+}
+
+function color_aleatorio() {
+  const colores = ["rojo", "azul", "verde", "negro", "blanco", "gris", "amarillo", "naranja", "dorado"]
+  return colores[num_aleatorio(0, colores.length - 1)]
+}
