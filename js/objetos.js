@@ -53,3 +53,21 @@ function coche_simulado() {
 
   return new Coche(marca, modelo, antiguedad, color, puertas)
 }
+
+const coches = []
+
+function crear_coches() {
+  for (let i = 1; i <= 10; i++) {
+    coches.push(coche_simulado())
+  }
+}
+
+function mostrar_coches() {
+  for (coche of coches) {
+    console.log(`\nDatos del coche\n${"-".repeat(15)}\n${coche}\n`)
+  }
+}
+
+crear_coches()
+
+mostrar_coches()
