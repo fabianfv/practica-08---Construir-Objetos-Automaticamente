@@ -43,3 +43,13 @@ function color_aleatorio() {
   const colores = ["rojo", "azul", "verde", "negro", "blanco", "gris", "amarillo", "naranja", "dorado"]
   return colores[num_aleatorio(0, colores.length - 1)]
 }
+
+function coche_simulado() {
+  const marca = marca_aleatoria()
+  const modelo = modelo_aleatorio()
+  const antiguedad = num_aleatorio(0, 30)
+  const color = color_aleatorio()
+  const puertas = num_aleatorio(2, 5)
+
+  return new Coche(marca, modelo, antiguedad, color, puertas)
+}
