@@ -1,5 +1,7 @@
 # Práctica 08 - Construir objetos automáticamente (instanciación en bucle)
 
+https://fabianfv.github.io/practica-08---Construir-Objetos-Automaticamente/
+
 Esta práctica consiste en crear instancias diferentes de un objeto mediante un bucle.
 
 Para inicializar las instancias del objeto coche utilizo funciones que randomizan los valores de las propiedades de cada una, para obtener una marca, un modelo, una antigüedad, un color y una cantidad de puertas, aleatorios.
