@@ -11,8 +11,8 @@ function Coche(marca, modelo, antiguedad, color, puertas) {
   this.obt_color = () => this.color
   this.obt_puertas = () => this.puertas
 
-  this.toString = () =>
-    `Marca: ${this.marca}\nModelo: ${this.modelo}\nAntigüedad: ${this.antiguedad}\nColor: ${this.color}\nPuertas: ${this.puertas}`
+  this.toString = (newline) =>
+    `Marca: ${this.marca}${newline}Modelo: ${this.modelo}${newline}Antigüedad: ${this.antiguedad}${newline}Color: ${this.color}${newline}Puertas: ${this.puertas}`
 }
 
 function num_aleatorio(min, max) {
@@ -64,7 +64,8 @@ function crear_coches() {
 
 function mostrar_coches() {
   for (coche of coches) {
-    console.log(`\nDatos del coche\n${"-".repeat(15)}\n${coche}\n`)
+    console.log(`\nDatos del coche\n${"-".repeat(15)}\n${coche.toString("\n")}\n`)
+    document.writeln(`Datos del coche<br>${"-".repeat(15)}<br>${coche.toString("<br>")}`)
   }
 }
 
